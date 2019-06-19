@@ -3,7 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test">
     <classes>
-      <class name="com.TestExecution.TestRunner"/>
+      <class name="com.TestExecution.LoginPage"/>
+      <class name="com.TestExecution.HomePage"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.TestExecution.LoginPage">
+        <methods>
+          <include name="screenshotattachtoreport"/>
+          <include name="Firstexecution"/>
+        </methods>
+      </class> <!-- com.TestExecution.LoginPage -->
+      <class name="com.TestExecution.HomePage">
+        <methods>
+          <include name="companylogoexists"/>
+        </methods>
+      </class> <!-- com.TestExecution.HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

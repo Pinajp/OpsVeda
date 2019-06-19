@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="preserve-order Suite" parallel="false" thread-count="2" >
   <test name="Test">
     <classes>
-      <class name="com.TestExecution.TestRunner"/>
+      <class name="com.TestExecution.LoginPage"/>
+      <class name="com.TestExecution.HomePage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

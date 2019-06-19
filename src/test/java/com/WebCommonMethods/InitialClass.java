@@ -1,23 +1,27 @@
 package com.WebCommonMethods;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TestExecution.Baseclass;
 
 public class InitialClass extends Baseclass{
 	public static WebDriver driver;
 	
-	public static  WebDriver getbrowser(WebDriver driver,String Browser) {
+	public static  WebDriver getbrowser(WebDriver driver,String Browser) throws InterruptedException {
 		if(Browser.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\BrowserDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
 			 driver.manage().window().maximize();
 			 driver.manage().deleteAllCookies();
+			 Thread.sleep(5000);
 			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--incognito");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -49,4 +53,8 @@ public class InitialClass extends Baseclass{
 		return driver;
 	}
 
+	public static void waitunitelement(WebDriver driver,WebElement element,int timeout) {
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
 }
