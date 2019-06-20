@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-preserve-order_Suite">
-              <span class="suite-name border-failed">preserve-order Suite</span>
+              <span class="suite-name border-passed">preserve-order Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-preserve-order_Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,45 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-preserve-order_Suite" class="hide-methods failed suite-preserve-order_Suite"> (hide)</a> <!-- hide-methods failed suite-preserve-order_Suite -->
-                      <a href="#" panel-name="suite-preserve-order_Suite" class="show-methods failed suite-preserve-order_Suite"> (show)</a> <!-- show-methods failed suite-preserve-order_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-preserve-order_Suite" class="hide-methods passed suite-preserve-order_Suite"> (hide)</a> <!-- hide-methods passed suite-preserve-order_Suite -->
+                      <a href="#" panel-name="suite-preserve-order_Suite" class="show-methods passed suite-preserve-order_Suite"> (show)</a> <!-- show-methods passed suite-preserve-order_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-preserve-order_Suite">
+                    <div class="method-list-content passed suite-preserve-order_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-preserve-order_Suite" title="com.TestExecution.HomePage" hash-for-method="companylogoexists">companylogoexists</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-preserve-order_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-preserve-order_Suite" class="hide-methods skipped suite-preserve-order_Suite"> (hide)</a> <!-- hide-methods skipped suite-preserve-order_Suite -->
-                      <a href="#" panel-name="suite-preserve-order_Suite" class="show-methods skipped suite-preserve-order_Suite"> (show)</a> <!-- show-methods skipped suite-preserve-order_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-preserve-order_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-preserve-order_Suite" title="com.TestExecution.LoginPage" hash-for-method="StartExecution">StartExecution</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-preserve-order_Suite" title="com.TestExecution.LoginPage" hash-for-method="Wrongpassword">Wrongpassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-preserve-order_Suite" title="com.TestExecution.LoginPage" hash-for-method="Wrongusername">Wrongusername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-preserve-order_Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-preserve-order_Suite" title="com.TestExecution.HomePage" hash-for-method="companylogoexists">companylogoexists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-preserve-order_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,31 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-preserve-order_Suite" class="panel preserve-order_Suite">
-          <div class="suite-preserve-order_Suite-class-failed">
+          <div class="suite-preserve-order_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.TestExecution.HomePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="companylogoexists">
-                  </a> <!-- companylogoexists -->
-                  <span class="method-name">companylogoexists</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.TestExecution.HomePage.companylogoexists(HomePage.java:17)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-preserve-order_Suite-class-failed -->
-          <div class="suite-preserve-order_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.TestExecution.LoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -191,7 +160,22 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-preserve-order_Suite-class-skipped -->
+          </div> <!-- suite-preserve-order_Suite-class-passed -->
+          <div class="suite-preserve-order_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestExecution.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="companylogoexists">
+                  </a> <!-- companylogoexists -->
+                  <span class="method-name">companylogoexists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-preserve-order_Suite-class-passed -->
         </div> <!-- panel preserve-order_Suite -->
         <div panel-name="test-xml-preserve-order_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -201,31 +185,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;preserve-order Suite&quot; parallel=&quot;classes&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;preserve-order Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.TestExecution.LoginPage&quot;/&gt;
       &lt;class name=&quot;com.TestExecution.HomePage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test name=&quot;Test(failed)&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.TestExecution.LoginPage&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;Firstexecution&quot;/&gt;
-          &lt;include name=&quot;StartExecution&quot;/&gt;
-          &lt;include name=&quot;Wrongpassword&quot;/&gt;
-          &lt;include name=&quot;Wrongusername&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.TestExecution.LoginPage --&gt;
-      &lt;class name=&quot;com.TestExecution.HomePage&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;screenshotattachtoreport&quot;/&gt;
-          &lt;include name=&quot;companylogoexists&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.TestExecution.HomePage --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- preserve-order Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,9 +204,6 @@
             <ul>
               <li>
                 <span class="test-name">Test (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Test(failed) (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,24 +233,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'companylogoexists')
 data.setCell(0, 2, 'com.TestExecution.HomePage')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 69886);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Wrongusername')
+data.setCell(1, 1, 'StartExecution')
 data.setCell(1, 2, 'com.TestExecution.LoginPage')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 65738);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'StartExecution')
+data.setCell(2, 1, 'Wrongusername')
 data.setCell(2, 2, 'com.TestExecution.LoginPage')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 41244);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Wrongpassword')
 data.setCell(3, 2, 'com.TestExecution.LoginPage')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 1980);
 window.suiteTableData['preserve-order_Suite']= { tableData: data, tableDiv: 'times-div-preserve-order_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-preserve-order_Suite">
               </div> <!-- times-div-preserve-order_Suite -->
             </div> <!-- times-div -->
@@ -329,32 +292,44 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestExecution.HomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">companylogoexists</span>
-                <span class="method-start">2799 ms</span>
+                <span class="method-start">2990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">screenshotattachtoreport([TestResult name=companylogoexists status=FAILURE method=HomePage.companylogoexists()[pri:0, instanc...)</span>
-                <span class="method-start">2816 ms</span>
+                <span class="method-name">screenshotattachtoreport([TestResult name=companylogoexists status=SUCCESS method=HomePage.companylogoexists()[pri:0, instanc...)</span>
+                <span class="method-start">72876 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestExecution.LoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Wrongusername</span>
-                <span class="method-start">2833 ms</span>
+                <span class="method-start">73774 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotattachtoreport([TestResult name=Wrongusername status=SUCCESS method=LoginPage.Wrongusername()[pri:1, instance:com.T...)</span>
+                <span class="method-start">115023 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Wrongpassword</span>
-                <span class="method-start">2842 ms</span>
+                <span class="method-start">116955 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotattachtoreport([TestResult name=Wrongpassword status=SUCCESS method=LoginPage.Wrongpassword()[pri:2, instance:com.T...)</span>
+                <span class="method-start">118939 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">StartExecution</span>
-                <span class="method-start">2851 ms</span>
+                <span class="method-start">119847 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">screenshotattachtoreport([TestResult name=StartExecution status=SUCCESS method=LoginPage.StartExecution()[pri:3, instance:com...)</span>
+                <span class="method-start">185585 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

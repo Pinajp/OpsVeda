@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [preserve-order Suite]" parallel="classes">
+<suite thread-count="10" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [preserve-order Suite]" parallel="tests">
   <test name="Test">
     <classes>
       <class name="com.TestExecution.LoginPage"/>
       <class name="com.TestExecution.HomePage"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)" parallel="classes">
-    <classes>
-      <class name="com.TestExecution.LoginPage">
-        <methods>
-          <include name="Firstexecution"/>
-          <include name="StartExecution"/>
-          <include name="Wrongpassword"/>
-          <include name="Wrongusername"/>
-        </methods>
-      </class> <!-- com.TestExecution.LoginPage -->
-      <class name="com.TestExecution.HomePage">
-        <methods>
-          <include name="screenshotattachtoreport"/>
-          <include name="companylogoexists"/>
-        </methods>
-      </class> <!-- com.TestExecution.HomePage -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [preserve-order Suite] -->

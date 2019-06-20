@@ -1,82 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" total="4" passed="0">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Attach test cases status to HTML report]]>
     </line>
+    <line>
+      <![CDATA[Attach test cases status to HTML report]]>
+    </line>
+    <line>
+      <![CDATA[Attach all test cases screens with pass statements]]>
+    </line>
+    <line>
+      <![CDATA[HTML Report Generate]]>
+    </line>
+    <line>
+      <![CDATA[Attach test cases status to HTML report]]>
+    </line>
+    <line>
+      <![CDATA[Attach all test cases screens with pass statements]]>
+    </line>
+    <line>
+      <![CDATA[HTML Report Generate]]>
+    </line>
+    <line>
+      <![CDATA[Attach test cases status to HTML report]]>
+    </line>
   </reporter-output>
-  <suite name="preserve-order Suite" duration-ms="93" started-at="2019-06-19T12:28:54Z" finished-at="2019-06-19T12:28:54Z">
+  <suite name="preserve-order Suite" duration-ms="182985" started-at="2019-06-20T06:22:47Z" finished-at="2019-06-20T06:25:50Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="93" started-at="2019-06-19T12:28:54Z" finished-at="2019-06-19T12:28:54Z">
+    <test name="Test" duration-ms="182985" started-at="2019-06-20T06:22:47Z" finished-at="2019-06-20T06:25:50Z">
       <class name="com.TestExecution.LoginPage">
-        <test-method status="PASS" signature="Firstexecution()[pri:0, instance:com.TestExecution.LoginPage@566776ad]" name="Firstexecution" is-config="true" duration-ms="2756" started-at="2019-06-19T17:58:51Z" finished-at="2019-06-19T17:58:54Z">
+        <test-method status="PASS" signature="Firstexecution()[pri:0, instance:com.TestExecution.LoginPage@1554909b]" name="Firstexecution" is-config="true" duration-ms="2927" started-at="2019-06-20T11:52:44Z" finished-at="2019-06-20T11:52:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Firstexecution -->
-        <test-method status="SKIP" signature="Wrongusername()[pri:1, instance:com.TestExecution.LoginPage@566776ad]" name="Wrongusername" duration-ms="3" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
+        <test-method status="PASS" signature="Wrongusername()[pri:1, instance:com.TestExecution.LoginPage@1554909b]" name="Wrongusername" duration-ms="41244" started-at="2019-06-20T11:53:58Z" finished-at="2019-06-20T11:54:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Wrongusername -->
-        <test-method status="SKIP" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@566776ad]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-        <test-method status="SKIP" signature="Wrongpassword()[pri:2, instance:com.TestExecution.LoginPage@566776ad]" name="Wrongpassword" duration-ms="2" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Wrongpassword -->
-        <test-method status="SKIP" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@566776ad]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-        <test-method status="SKIP" signature="StartExecution()[pri:3, instance:com.TestExecution.LoginPage@566776ad]" name="StartExecution" duration-ms="2" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartExecution -->
-        <test-method status="SKIP" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@566776ad]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-      </class> <!-- com.TestExecution.LoginPage -->
-      <class name="com.TestExecution.HomePage">
-        <test-method status="FAIL" signature="companylogoexists()[pri:0, instance:com.TestExecution.HomePage@6108b2d7]" name="companylogoexists" duration-ms="10" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.TestExecution.HomePage.companylogoexists(HomePage.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- companylogoexists -->
-        <test-method status="FAIL" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@6108b2d7]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-19T17:58:54Z" finished-at="2019-06-19T17:58:54Z">
+        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@1554909b]" name="screenshotattachtoreport" is-config="true" duration-ms="1932" started-at="2019-06-20T11:54:39Z" finished-at="2019-06-20T11:54:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=companylogoexists status=FAILURE method=HomePage.companylogoexists()[pri:0, instance:com.TestExecution.HomePage@6108b2d7] output={null}]]]>
+                <![CDATA[[TestResult name=Wrongusername status=SUCCESS method=LoginPage.Wrongusername()[pri:1, instance:com.TestExecution.LoginPage@1554909b] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <reporter-output>
+            <line>
+              <![CDATA[Attach test cases status to HTML report]]>
+            </line>
+            <line>
+              <![CDATA[Attach all test cases screens with pass statements]]>
+            </line>
+            <line>
+              <![CDATA[HTML Report Generate]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshotattachtoreport -->
+        <test-method status="PASS" signature="Wrongpassword()[pri:2, instance:com.TestExecution.LoginPage@1554909b]" name="Wrongpassword" duration-ms="1980" started-at="2019-06-20T11:54:41Z" finished-at="2019-06-20T11:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Wrongpassword -->
+        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@1554909b]" name="screenshotattachtoreport" is-config="true" duration-ms="898" started-at="2019-06-20T11:54:43Z" finished-at="2019-06-20T11:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Wrongpassword status=SUCCESS method=LoginPage.Wrongpassword()[pri:2, instance:com.TestExecution.LoginPage@1554909b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Attach test cases status to HTML report]]>
+            </line>
+            <line>
+              <![CDATA[Attach all test cases screens with pass statements]]>
+            </line>
+            <line>
+              <![CDATA[HTML Report Generate]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshotattachtoreport -->
+        <test-method status="PASS" signature="StartExecution()[pri:3, instance:com.TestExecution.LoginPage@1554909b]" name="StartExecution" duration-ms="65738" started-at="2019-06-20T11:54:44Z" finished-at="2019-06-20T11:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartExecution -->
+        <test-method status="FAIL" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@1554909b]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-20T11:55:50Z" finished-at="2019-06-20T11:55:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StartExecution status=SUCCESS method=LoginPage.StartExecution()[pri:3, instance:com.TestExecution.LoginPage@1554909b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OVAL-L124', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pinaj\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51527}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 0f712125d4c3487e531a777827fa1921]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OVAL-L124', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pinaj\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51527}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 0f712125d4c3487e531a777827fa1921
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 	at com.WebReusabilityMethods.Screenshotsonwebpages.getscreenshots(Screenshotsonwebpages.java:18)
-	at com.TestExecution.Baseclass.screenshotattachtoreport(Baseclass.java:42)
+	at com.TestExecution.Baseclass.screenshotattachtoreport(Baseclass.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,6 +143,62 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Attach test cases status to HTML report]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshotattachtoreport -->
+      </class> <!-- com.TestExecution.LoginPage -->
+      <class name="com.TestExecution.HomePage">
+        <test-method status="PASS" signature="companylogoexists()[pri:0, instance:com.TestExecution.HomePage@6bf256fa]" name="companylogoexists" duration-ms="69886" started-at="2019-06-20T11:52:47Z" finished-at="2019-06-20T11:53:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companylogoexists -->
+        <test-method status="FAIL" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@6bf256fa]" name="screenshotattachtoreport" is-config="true" duration-ms="0" started-at="2019-06-20T11:53:57Z" finished-at="2019-06-20T11:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=companylogoexists status=SUCCESS method=HomePage.companylogoexists()[pri:0, instance:com.TestExecution.HomePage@6bf256fa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.TestExecution.Baseclass.screenshotattachtoreport(Baseclass.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:709)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
