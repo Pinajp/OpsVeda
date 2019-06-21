@@ -16,7 +16,7 @@ public class Screenshotsonwebpages {
 	public static String getscreenshots(WebDriver driver) {
 		TakesScreenshot tc = (TakesScreenshot)driver;
 		File source = tc.getScreenshotAs(OutputType.FILE);
-		String screenshotpath = "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\Screenshots\\" +getsystemdatetime()+".png";
+		String screenshotpath = "C:\\Users\\Pinaj\\Automation\\OpsVeda\\Screenshots\\" +getsystemdatetime()+".png";
 		try {
 			FileHandler.copy(source, new File(screenshotpath));
 		} catch (IOException e) {

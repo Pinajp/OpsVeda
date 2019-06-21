@@ -26,7 +26,7 @@ public class Baseclass {
 	public void Firstexecution() {
 		 excel = new TestDatareader();
 		 //screen = new Screenshotsonwebpages();
-		 ExtentHtmlReporter extent = new ExtentHtmlReporter("C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\Reports\\OpsVedaReport"+screen.getsystemdatetime()+".HTML");
+		 ExtentHtmlReporter extent = new ExtentHtmlReporter("C:\\Users\\Pinaj\\Automation\\OpsVeda\\Reports\\"+screen.getsystemdatetime()+".HTML");
 		 report = new ExtentReports();
 		 report.attachReporter(extent);
 	}

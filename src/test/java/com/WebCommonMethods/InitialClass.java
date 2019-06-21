@@ -17,7 +17,7 @@ public class InitialClass extends Baseclass{
 	
 	public static  WebDriver getbrowser(WebDriver driver,String Browser) throws InterruptedException {
 		if(Browser.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\BrowserDriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Automation\\OpsVeda\\BrowserDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
 			 driver.manage().window().maximize();
 			 driver.manage().deleteAllCookies();

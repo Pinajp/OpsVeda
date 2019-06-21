@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="preserve-order Suite" parallel="false" thread-count="2" >
+<suite name="preserve-order Suite" parallel="classes" thread-count="5" >
   <test name="Test">
     <classes>
       <class name="com.TestExecution.LoginPage"/>
       <class name="com.TestExecution.HomePage"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

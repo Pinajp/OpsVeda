@@ -83,7 +83,17 @@ public class WPLogin extends Baseclass{
 		}
 		
 	}
+
+
 	
+	public void Companylogoexists(WebDriver driver) {
+		this.driver = driver;
+		wait.waitunitelement(driver,companylogo , 50);
+		boolean companylogovisible = companylogo.isDisplayed();
+		System.out.println("company logo is present" + companylogovisible);
+
+	}
+
 	
 
 }

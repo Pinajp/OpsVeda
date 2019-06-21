@@ -1,7 +1,8 @@
 package com.TestExecution;
 
-import java.sql.Driver;
 
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -10,12 +11,14 @@ import com.WebPages.WPHome;
 import com.WebPages.WPLogin;
 
 public class LoginPage extends Baseclass {
+	public WebDriver driver;
 		InitialClass ic = new InitialClass();
 		WPLogin wplogin;
-		WPHome wphome;
+		//WPHome wphome;
 		
 		
-		@Test(priority = 1, enabled = true)
+		
+		@Test(priority = 0)
 		public void Wrongusername() throws InterruptedException {
 			logger = report.createTest("WrongUserName");
 			driver = ic.getbrowser(driver, "Chrome");
@@ -25,9 +28,9 @@ public class LoginPage extends Baseclass {
 			wplogin.loginwrongusername(driver);		
 		}
 		
-		@Test(priority = 2,enabled = true)
+		@Test(priority = 1)
 		public void Wrongpassword() throws InterruptedException {
-			logger = report.createTest("WrongUserName");
+			logger = report.createTest("WrongPassword");
 			//driver = ic.getbrowser(driver, "Chrome");
 			logger.info("login with wrongpassword");
 			//screen.getscreenshots(driver);
@@ -37,7 +40,7 @@ public class LoginPage extends Baseclass {
 		
 		
 		
-		@Test(priority = 3,enabled = true)
+		@Test(priority = 2)
 		public void StartExecution() throws InterruptedException {
 			logger = report.createTest("OpsVeda Login");
 			//driver = ic.getbrowser(driver,"Chrome");

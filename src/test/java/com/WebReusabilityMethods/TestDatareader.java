@@ -12,7 +12,7 @@ public class TestDatareader {
 	public XSSFWorkbook xsw;
 	
 	public TestDatareader() {
-		File path = new File("C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\TestData\\TestData.xlsx");
+		File path = new File("C:\\Users\\Pinaj\\Automation\\OpsVeda\\TestData\\TestData.xlsx");
 		try {
 			FileInputStream fis = new FileInputStream(path);
 			 xsw = new XSSFWorkbook(fis);
