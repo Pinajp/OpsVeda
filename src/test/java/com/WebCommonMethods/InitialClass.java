@@ -11,11 +11,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TestExecution.Baseclass;
+import com.WebReusabilityMethods.TestDatareader;
 
-public class InitialClass extends Baseclass{
+public class InitialClass extends TestDatareader{
 	public static WebDriver driver;
 	
-	public static  WebDriver getbrowser(WebDriver driver,String Browser) throws InterruptedException {
+	public static  WebDriver getbrowser(String Browser) throws InterruptedException {
 		if(Browser.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Automation\\OpsVeda\\BrowserDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
@@ -27,7 +28,7 @@ public class InitialClass extends Baseclass{
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			WebDriver chromedriver=new ChromeDriver(capabilities);*/
-			String URL = excel.getstringcelldata("Credentials", 1, 0);
+			String URL = getstringcelldata("Credentials", 1, 0);
 			driver.get(URL);
 			System.out.println("Chrome broswer opened successfully");
 		}

@@ -9,21 +9,30 @@ import com.WebPages.WPHome;
 import com.WebPages.WPLogin;
 
 public class HomePage extends Baseclass{
-	public WebDriver driver;
+	//public WebDriver driver;
 	InitialClass ic = new InitialClass();
-	//WPHome wphome;
+	WPHome wphome;
 	WPLogin wplogin;
 	
-	@Test
+	@Test(priority = 4)
 	public void companylogoexists() throws InterruptedException {
 		logger = report.createTest("Companylogo Exists");
-		driver = ic.getbrowser(driver, "Chrome");
+		driver = ic.getbrowser("Chrome");
+		screen.getscreenshots(driver);
+
 		wplogin = PageFactory.initElements(driver, WPLogin.class);
 		wplogin.loginsuccess(driver);
+
 		logger.info("Companylogo Exists");
 		wplogin = PageFactory.initElements(driver, WPLogin.class);
 		wplogin.Companylogoexists(driver);
-		//screen.getscreenshots(driver);
+		screen.getscreenshots(driver);
+
+		}
+	
+	@Test(priority = 5)
+	public void print() {
+		System.out.println("Test ");
 	}
 
 }

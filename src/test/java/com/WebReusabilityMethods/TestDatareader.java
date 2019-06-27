@@ -8,8 +8,8 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
-public class TestDatareader {
-	public XSSFWorkbook xsw;
+public  class TestDatareader {
+	public static XSSFWorkbook xsw;
 	
 	public TestDatareader() {
 		File path = new File("C:\\Users\\Pinaj\\Automation\\OpsVeda\\TestData\\TestData.xlsx");
@@ -21,7 +21,7 @@ public class TestDatareader {
 		}
 	}
 	
-	public String getstringcelldata(String Sheetname,int rownum,int columnnum) {
+	public static String getstringcelldata(String Sheetname,int rownum,int columnnum) {
 		return xsw.getSheet(Sheetname).getRow(rownum).getCell(columnnum).getStringCellValue();}
 
 }

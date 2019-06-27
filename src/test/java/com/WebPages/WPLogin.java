@@ -9,7 +9,7 @@ import com.TestExecution.Baseclass;
 import com.WebCommonMethods.InitialClass;
 
 public class WPLogin extends Baseclass{
-	public WebDriver driver;
+	//public WebDriver driver;
 	public InitialClass wait;
 	
 	
@@ -22,7 +22,7 @@ public class WPLogin extends Baseclass{
 	
 	
 	public void loginwrongusername(WebDriver driver) throws InterruptedException {
-		this.driver = driver;
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 2, 1);
 		String passsword = excel.getstringcelldata("Credentials", 2, 2);
 		usernamefield.sendKeys(username);
@@ -43,7 +43,7 @@ public class WPLogin extends Baseclass{
 	}
 	
 	public void loginwrongpassword(WebDriver driver)throws InterruptedException{
-		this.driver = driver;
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 3, 1);
 		String passsword = excel.getstringcelldata("Credentials", 3, 2);
 		usernamefield.sendKeys(username);
@@ -63,11 +63,13 @@ public class WPLogin extends Baseclass{
 	}
 	
 	
-	public void loginsuccess(WebDriver driver) {
-		this.driver = driver;
+	public void loginsuccess(WebDriver driver) throws InterruptedException {
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 1, 1);
 		String password = excel.getstringcelldata("Credentials", 1, 2);
+		Thread.sleep(3000);
 		usernamefield.sendKeys(username);
+		Thread.sleep(3000);
 		passwordfield.sendKeys(password);
 		loginbutton.click();
 		wait.waitunitelement(driver,companylogo , 50);
@@ -87,7 +89,7 @@ public class WPLogin extends Baseclass{
 
 	
 	public void Companylogoexists(WebDriver driver) {
-		this.driver = driver;
+		//this.driver = driver;
 		wait.waitunitelement(driver,companylogo , 50);
 		boolean companylogovisible = companylogo.isDisplayed();
 		System.out.println("company logo is present" + companylogovisible);

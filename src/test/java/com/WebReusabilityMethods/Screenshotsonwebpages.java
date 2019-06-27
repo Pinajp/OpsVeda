@@ -11,7 +11,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
-public class Screenshotsonwebpages {
+import com.TestExecution.Baseclass;
+
+public class Screenshotsonwebpages extends Baseclass{
 	
 	public static String getscreenshots(WebDriver driver) {
 		TakesScreenshot tc = (TakesScreenshot)driver;

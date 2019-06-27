@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [preserve-order Suite]" parallel="classes">
-  <test name="Test">
+<suite thread-count="10" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [preserve-order Suite]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
     <classes>
-      <class name="com.TestExecution.LoginPage"/>
-      <class name="com.TestExecution.HomePage"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)" parallel="classes">
-    <classes>
+      <class name="com.TestExecution.HomePage">
+        <methods>
+          <include name="screenshotattachtoreport"/>
+        </methods>
+      </class> <!-- com.TestExecution.HomePage -->
       <class name="com.TestExecution.LoginPage">
         <methods>
+          <include name="screenshotattachtoreport"/>
           <include name="Firstexecution"/>
           <include name="StartExecution"/>
           <include name="Wrongpassword"/>
         </methods>
       </class> <!-- com.TestExecution.LoginPage -->
-      <class name="com.TestExecution.HomePage">
-        <methods>
-          <include name="screenshotattachtoreport"/>
-          <include name="companylogoexists"/>
-        </methods>
-      </class> <!-- com.TestExecution.HomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [preserve-order Suite] -->

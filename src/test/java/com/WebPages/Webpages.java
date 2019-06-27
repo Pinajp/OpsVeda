@@ -9,7 +9,7 @@ import com.TestExecution.Baseclass;
 import com.WebCommonMethods.InitialClass;
 
 public class Webpages extends Baseclass{
-	public WebDriver driver;
+	//public WebDriver driver;
 	public InitialClass wait;
 	
 	
@@ -21,7 +21,7 @@ public class Webpages extends Baseclass{
 
 	
 	public void loginsuccess(WebDriver driver) {
-		this.driver = driver;
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 1, 1);
 		String password = excel.getstringcelldata("Credentials", 1, 2);
 		usernamefield.sendKeys(username);
@@ -41,7 +41,7 @@ public class Webpages extends Baseclass{
 		
 	}
 	public void loginwrongusername(WebDriver driver) {
-		this.driver = driver;
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 2, 1);
 		String passsword = excel.getstringcelldata("Credentials", 2, 2);
 		usernamefield.sendKeys(username);
@@ -53,7 +53,7 @@ public class Webpages extends Baseclass{
 		
 	}
 	public void loginwrongpassword(WebDriver driver) {
-		this.driver = driver;
+		//this.driver = driver;
 		String username = excel.getstringcelldata("Credentials", 3, 1);
 		String passsword = excel.getstringcelldata("Credentials", 3, 2);
 		usernamefield.sendKeys(username);

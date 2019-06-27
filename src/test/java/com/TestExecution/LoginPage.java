@@ -11,24 +11,24 @@ import com.WebPages.WPHome;
 import com.WebPages.WPLogin;
 
 public class LoginPage extends Baseclass {
-	public WebDriver driver;
+	//public WebDriver driver;
 		InitialClass ic = new InitialClass();
 		WPLogin wplogin;
 		//WPHome wphome;
 		
 		
 		
-		@Test(priority = 0)
+		@Test(priority = 1)
 		public void Wrongusername() throws InterruptedException {
 			logger = report.createTest("WrongUserName");
-			driver = ic.getbrowser(driver, "Chrome");
+			driver = ic.getbrowser("Chrome");
 			logger.info("login with wrongusername");
 			//screen.getscreenshots(driver);
 			wplogin = PageFactory.initElements(driver, WPLogin.class);
 			wplogin.loginwrongusername(driver);		
 		}
 		
-		@Test(priority = 1)
+		@Test(priority = 2)
 		public void Wrongpassword() throws InterruptedException {
 			logger = report.createTest("WrongPassword");
 			//driver = ic.getbrowser(driver, "Chrome");
@@ -40,15 +40,16 @@ public class LoginPage extends Baseclass {
 		
 		
 		
-		@Test(priority = 2)
+		@Test(priority = 3)
 		public void StartExecution() throws InterruptedException {
 			logger = report.createTest("OpsVeda Login");
 			//driver = ic.getbrowser(driver,"Chrome");
 			//screen.getscreenshots(driver);
+			logger.info("login with correct cred");
 			 wplogin = PageFactory.initElements(driver, WPLogin.class);
 			 wplogin.loginsuccess(driver);
 			 //screen.getscreenshots(driver);
-			 driver.close();
+		
 		} 
 		
 		
