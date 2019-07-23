@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Attach test cases status to HTML report]]>
@@ -28,117 +28,25 @@
     <line>
       <![CDATA[HTML Report Generate]]>
     </line>
-    <line>
-      <![CDATA[Attach test cases status to HTML report]]>
-    </line>
-    <line>
-      <![CDATA[Attach all test cases screens with pass statements]]>
-    </line>
-    <line>
-      <![CDATA[HTML Report Generate]]>
-    </line>
-    <line>
-      <![CDATA[Attach test cases status to HTML report]]>
-    </line>
-    <line>
-      <![CDATA[Attach all test cases screens with pass statements]]>
-    </line>
-    <line>
-      <![CDATA[HTML Report Generate]]>
-    </line>
   </reporter-output>
-  <suite name="preserve-order Suite" duration-ms="110030" started-at="2019-06-26T02:14:53Z" finished-at="2019-06-26T02:16:43Z">
+  <suite name="Default suite" duration-ms="58597" started-at="2019-07-18T01:22:41Z" finished-at="2019-07-18T01:23:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="110030" started-at="2019-06-26T02:14:53Z" finished-at="2019-06-26T02:16:43Z">
-      <class name="com.TestExecution.LoginPage">
-        <test-method status="PASS" signature="Firstexecution()[pri:0, instance:com.TestExecution.LoginPage@123ef382]" name="Firstexecution" is-config="true" duration-ms="169" started-at="2019-06-26T07:44:53Z" finished-at="2019-06-26T07:44:53Z">
+    <test name="Default test" duration-ms="58597" started-at="2019-07-18T01:22:41Z" finished-at="2019-07-18T01:23:40Z">
+      <class name="com.TestExecution.HomePage">
+        <test-method status="PASS" signature="Firstexecution()[pri:0, instance:com.TestExecution.HomePage@6eda5c9]" name="Firstexecution" is-config="true" duration-ms="154" started-at="2019-07-18T06:52:41Z" finished-at="2019-07-18T06:52:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Firstexecution -->
-        <test-method status="PASS" signature="Wrongusername()[pri:1, instance:com.TestExecution.LoginPage@123ef382]" name="Wrongusername" duration-ms="29143" started-at="2019-06-26T07:44:53Z" finished-at="2019-06-26T07:45:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Wrongusername -->
-        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@123ef382]" name="screenshotattachtoreport" is-config="true" duration-ms="589" started-at="2019-06-26T07:45:22Z" finished-at="2019-06-26T07:45:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Wrongusername status=SUCCESS method=LoginPage.Wrongusername()[pri:1, instance:com.TestExecution.LoginPage@123ef382] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Attach test cases status to HTML report]]>
-            </line>
-            <line>
-              <![CDATA[Attach all test cases screens with pass statements]]>
-            </line>
-            <line>
-              <![CDATA[HTML Report Generate]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-        <test-method status="PASS" signature="Wrongpassword()[pri:2, instance:com.TestExecution.LoginPage@123ef382]" name="Wrongpassword" duration-ms="462" started-at="2019-06-26T07:45:23Z" finished-at="2019-06-26T07:45:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Wrongpassword -->
-        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@123ef382]" name="screenshotattachtoreport" is-config="true" duration-ms="404" started-at="2019-06-26T07:45:23Z" finished-at="2019-06-26T07:45:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Wrongpassword status=SUCCESS method=LoginPage.Wrongpassword()[pri:2, instance:com.TestExecution.LoginPage@123ef382] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Attach test cases status to HTML report]]>
-            </line>
-            <line>
-              <![CDATA[Attach all test cases screens with pass statements]]>
-            </line>
-            <line>
-              <![CDATA[HTML Report Generate]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-        <test-method status="PASS" signature="StartExecution()[pri:3, instance:com.TestExecution.LoginPage@123ef382]" name="StartExecution" duration-ms="23354" started-at="2019-06-26T07:45:23Z" finished-at="2019-06-26T07:45:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartExecution -->
-        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.LoginPage@123ef382]" name="screenshotattachtoreport" is-config="true" duration-ms="453" started-at="2019-06-26T07:45:47Z" finished-at="2019-06-26T07:45:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=StartExecution status=SUCCESS method=LoginPage.StartExecution()[pri:3, instance:com.TestExecution.LoginPage@123ef382] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Attach test cases status to HTML report]]>
-            </line>
-            <line>
-              <![CDATA[Attach all test cases screens with pass statements]]>
-            </line>
-            <line>
-              <![CDATA[HTML Report Generate]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- screenshotattachtoreport -->
-      </class> <!-- com.TestExecution.LoginPage -->
-      <class name="com.TestExecution.HomePage">
-        <test-method status="PASS" signature="companylogoexists()[pri:4, instance:com.TestExecution.HomePage@dbf57b3]" name="companylogoexists" duration-ms="54781" started-at="2019-06-26T07:45:47Z" finished-at="2019-06-26T07:46:42Z">
+        <test-method status="PASS" signature="companylogoexists()[pri:4, instance:com.TestExecution.HomePage@6eda5c9]" name="companylogoexists" duration-ms="55918" started-at="2019-07-18T06:52:41Z" finished-at="2019-07-18T06:53:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- companylogoexists -->
-        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@dbf57b3]" name="screenshotattachtoreport" is-config="true" duration-ms="373" started-at="2019-06-26T07:46:42Z" finished-at="2019-06-26T07:46:42Z">
+        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@6eda5c9]" name="screenshotattachtoreport" is-config="true" duration-ms="531" started-at="2019-07-18T06:53:37Z" finished-at="2019-07-18T06:53:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=companylogoexists status=SUCCESS method=HomePage.companylogoexists()[pri:4, instance:com.TestExecution.HomePage@dbf57b3] output={null}]]]>
+                <![CDATA[[TestResult name=companylogoexists status=SUCCESS method=HomePage.companylogoexists()[pri:4, instance:com.TestExecution.HomePage@6eda5c9] output={null}]]]>
               </value>
             </param>
           </params>
@@ -154,15 +62,39 @@
             </line>
           </reporter-output>
         </test-method> <!-- screenshotattachtoreport -->
-        <test-method status="PASS" signature="print()[pri:5, instance:com.TestExecution.HomePage@dbf57b3]" name="print" duration-ms="1" started-at="2019-06-26T07:46:42Z" finished-at="2019-06-26T07:46:42Z">
+        <test-method status="PASS" signature="menuclick()[pri:5, instance:com.TestExecution.HomePage@6eda5c9]" name="menuclick" duration-ms="1192" started-at="2019-07-18T06:53:37Z" finished-at="2019-07-18T06:53:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- print -->
-        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@dbf57b3]" name="screenshotattachtoreport" is-config="true" duration-ms="449" started-at="2019-06-26T07:46:42Z" finished-at="2019-06-26T07:46:43Z">
+        </test-method> <!-- menuclick -->
+        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@6eda5c9]" name="screenshotattachtoreport" is-config="true" duration-ms="375" started-at="2019-07-18T06:53:39Z" finished-at="2019-07-18T06:53:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=print status=SUCCESS method=HomePage.print()[pri:5, instance:com.TestExecution.HomePage@dbf57b3] output={null}]]]>
+                <![CDATA[[TestResult name=menuclick status=SUCCESS method=HomePage.menuclick()[pri:5, instance:com.TestExecution.HomePage@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Attach test cases status to HTML report]]>
+            </line>
+            <line>
+              <![CDATA[Attach all test cases screens with pass statements]]>
+            </line>
+            <line>
+              <![CDATA[HTML Report Generate]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshotattachtoreport -->
+        <test-method status="PASS" signature="DPbutton()[pri:6, instance:com.TestExecution.HomePage@6eda5c9]" name="DPbutton" duration-ms="168" started-at="2019-07-18T06:53:39Z" finished-at="2019-07-18T06:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DPbutton -->
+        <test-method status="PASS" signature="screenshotattachtoreport(org.testng.ITestResult)[pri:0, instance:com.TestExecution.HomePage@6eda5c9]" name="screenshotattachtoreport" is-config="true" duration-ms="400" started-at="2019-07-18T06:53:39Z" finished-at="2019-07-18T06:53:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DPbutton status=SUCCESS method=HomePage.DPbutton()[pri:6, instance:com.TestExecution.HomePage@6eda5c9] output={null}]]]>
               </value>
             </param>
           </params>
@@ -179,6 +111,6 @@
           </reporter-output>
         </test-method> <!-- screenshotattachtoreport -->
       </class> <!-- com.TestExecution.HomePage -->
-    </test> <!-- Test -->
-  </suite> <!-- preserve-order Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

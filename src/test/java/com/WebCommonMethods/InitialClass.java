@@ -1,5 +1,6 @@
 package com.WebCommonMethods;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -57,5 +58,11 @@ public class InitialClass extends TestDatareader{
 	public static void waitunitelement(WebDriver driver,WebElement element,int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
+	
+	public WebElement WaitforElement(WebElement elementtobeclicked) {
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", elementtobeclicked);
+		return elementtobeclicked;
 	}
 }

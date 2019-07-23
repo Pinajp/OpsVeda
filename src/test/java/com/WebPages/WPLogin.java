@@ -78,24 +78,10 @@ public class WPLogin extends Baseclass{
 		System.out.println(title);
 		try {
 			Assert.assertEquals("OpsVeda :: Operational Intelligence Suite", title);
-			System.out.println("Expected and actual result result is matched");
+			System.out.println("Expected and actual result  is matched");
 		} catch (Exception e) {
 			System.out.println("Expected and actual result is not matched");
-			
-		}
+					}
 		
 	}
-
-
-	
-	public void Companylogoexists(WebDriver driver) {
-		//this.driver = driver;
-		wait.waitunitelement(driver,companylogo , 50);
-		boolean companylogovisible = companylogo.isDisplayed();
-		System.out.println("company logo is present" + companylogovisible);
-
-	}
-
-	
-
 }

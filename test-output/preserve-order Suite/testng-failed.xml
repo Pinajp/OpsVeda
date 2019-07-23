@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="10" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [preserve-order Suite]" parallel="tests">
+<suite thread-count="10" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [preserve-order Suite]" parallel="tests">
   <test name="Test(failed)" parallel="tests">
     <classes>
       <class name="com.TestExecution.HomePage">
@@ -12,8 +12,8 @@
         <methods>
           <include name="screenshotattachtoreport"/>
           <include name="Firstexecution"/>
-          <include name="StartExecution"/>
           <include name="Wrongpassword"/>
+          <include name="Wrongusername"/>
         </methods>
       </class> <!-- com.TestExecution.LoginPage -->
     </classes>

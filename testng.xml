@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="preserve-order Suite" configfailurepolicy="continue" parallel = "tests" thread-count = "10" >
+<suite name="preserve-order Suite" configfailurepolicy="continue" parallel = "tests" thread-count = "10" verbose="10" >
   <test name="Test">
     <classes>
       <class name="com.TestExecution.LoginPage"/>

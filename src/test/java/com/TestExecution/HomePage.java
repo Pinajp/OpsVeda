@@ -18,21 +18,33 @@ public class HomePage extends Baseclass{
 	public void companylogoexists() throws InterruptedException {
 		logger = report.createTest("Companylogo Exists");
 		driver = ic.getbrowser("Chrome");
-		screen.getscreenshots(driver);
-
-		wplogin = PageFactory.initElements(driver, WPLogin.class);
-		wplogin.loginsuccess(driver);
-
-		logger.info("Companylogo Exists");
-		wplogin = PageFactory.initElements(driver, WPLogin.class);
-		wplogin.Companylogoexists(driver);
-		screen.getscreenshots(driver);
-
+		//screen.getscreenshots(driver);
+        /*wplogin = PageFactory.initElements(driver, WPLogin.class);
+		wplogin.loginsuccess(driver);*/
+		wphome = PageFactory.initElements(driver, WPHome.class);
+		wphome.login(driver);
+        logger.info("Companylogo Exists");
+		wphome.Companylogoexist(driver);
+		//screen.getscreenshots(driver);
 		}
 	
 	@Test(priority = 5)
-	public void print() {
-		System.out.println("Test ");
+	
+	public void menuclick() throws InterruptedException {
+		logger = report.createTest("menuclick");
+		wphome = PageFactory.initElements(driver, WPHome.class);
+		Thread.sleep(1000);
+		wphome.comapanymenuclickable();
+		
+	}
+	
+	@Test(priority = 6)
+	public void DPbutton() {
+		logger = report.createTest("Dp icon is clicked");
+		wphome = PageFactory.initElements(driver, WPHome.class);
+		wphome.profilelogout();
+	}
+	
 	}
 
-}
+

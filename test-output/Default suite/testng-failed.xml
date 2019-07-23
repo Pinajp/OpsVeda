@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.TestExecution.LoginPage"/>
+      <class name="com.TestExecution.HomePage">
+        <methods>
+          <include name="screenshotattachtoreport"/>
+          <include name="Firstexecution"/>
+          <include name="menuclick"/>
+          <include name="DPbutton"/>
+          <include name="companylogoexists"/>
+        </methods>
+      </class> <!-- com.TestExecution.HomePage -->
     </classes>
-  </test> <!-- Default test -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
