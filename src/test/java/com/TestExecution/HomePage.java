@@ -1,5 +1,7 @@
 package com.TestExecution;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -34,15 +36,22 @@ public class HomePage extends Baseclass{
 		logger = report.createTest("menuclick");
 		wphome = PageFactory.initElements(driver, WPHome.class);
 		Thread.sleep(1000);
-		wphome.comapanymenuclickable();
+		wphome.comapanymenuclickable(driver);
 		
 	}
 	
 	@Test(priority = 6)
-	public void DPbutton() {
+	public void DPName() {
 		logger = report.createTest("Dp icon is clicked");
 		wphome = PageFactory.initElements(driver, WPHome.class);
-		wphome.profilelogout();
+		wphome.ProfileName();
+	}
+	
+	@Test(priority = 7)
+	public void DPupload() throws IOException {
+		logger = report.createTest("DP Upload");
+		wphome = PageFactory.initElements(driver, WPHome.class);
+		wphome.UploadDp();
 	}
 	
 	}

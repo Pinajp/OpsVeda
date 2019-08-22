@@ -19,7 +19,7 @@ public class InitialClass extends TestDatareader{
 	
 	public static  WebDriver getbrowser(String Browser) throws InterruptedException {
 		if(Browser.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Automation\\OpsVeda\\BrowserDriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\OpsVeda\\BrowserDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
 			 driver.manage().window().maximize();
 			 driver.manage().deleteAllCookies();
@@ -34,7 +34,7 @@ public class InitialClass extends TestDatareader{
 			System.out.println("Chrome broswer opened successfully");
 		}
 		else if(Browser.equals("Firefox")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\BrowserDriver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Automation\\OpsVeda\\BrowserDriver\\geckodriver.exe");
 			 driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.get("https://ovc.opsvedadev.opsveda.com:4302/OpsVeda_new/?");
@@ -42,7 +42,7 @@ public class InitialClass extends TestDatareader{
 			
 		}
 		else if(Browser.equals("IE")) {
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\BrowserDriver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "D:\\Automation\\OpsVeda\\BrowserDriver\\IEDriverServer.exe");
 			 driver = new InternetExplorerDriver();
 			driver.manage().window().maximize();
 			driver.get("https://ovc.opsvedadev.opsveda.com:4302/OpsVeda_new/?");
@@ -60,7 +60,7 @@ public class InitialClass extends TestDatareader{
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 	
-	public WebElement WaitforElement(WebElement elementtobeclicked) {
+	public static WebElement WaitforElement(WebDriver driver,WebElement elementtobeclicked) {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", elementtobeclicked);
 		return elementtobeclicked;

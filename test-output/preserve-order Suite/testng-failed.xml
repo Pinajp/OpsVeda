@@ -6,12 +6,17 @@
       <class name="com.TestExecution.HomePage">
         <methods>
           <include name="screenshotattachtoreport"/>
+          <include name="DPName"/>
+          <include name="menuclick"/>
+          <include name="DPupload"/>
+          <include name="companylogoexists"/>
         </methods>
       </class> <!-- com.TestExecution.HomePage -->
       <class name="com.TestExecution.LoginPage">
         <methods>
           <include name="screenshotattachtoreport"/>
           <include name="Firstexecution"/>
+          <include name="StartExecution"/>
           <include name="Wrongpassword"/>
           <include name="Wrongusername"/>
         </methods>

@@ -7,8 +7,9 @@
         <methods>
           <include name="screenshotattachtoreport"/>
           <include name="Firstexecution"/>
+          <include name="DPName"/>
           <include name="menuclick"/>
-          <include name="DPbutton"/>
+          <include name="DPupload"/>
           <include name="companylogoexists"/>
         </methods>
       </class> <!-- com.TestExecution.HomePage -->

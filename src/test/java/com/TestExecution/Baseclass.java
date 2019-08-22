@@ -27,7 +27,7 @@ public class Baseclass extends InitialClass {
 	public void Firstexecution() {
 		 excel = new TestDatareader();
 		 //screen = new Screenshotsonwebpages();
-		 ExtentHtmlReporter extent = new ExtentHtmlReporter("C:\\Users\\Pinaj\\Automation\\OpsVeda\\Reports\\OpsVeda"+Screenshotsonwebpages.getsystemdatetime()+".HTML");
+		 ExtentHtmlReporter extent = new ExtentHtmlReporter("D:\\Automation\\OpsVeda\\Reports\\OpsVeda"+Screenshotsonwebpages.getsystemdatetime()+".HTML");
 		 report = new ExtentReports();
 		 report.attachReporter(extent);
 	}
@@ -36,12 +36,12 @@ public class Baseclass extends InitialClass {
 	public void screenshotattachtoreport(ITestResult result) throws IOException {
 		Reporter.log("Attach test cases status to HTML report");
 		if(result.getStatus()==ITestResult.SUCCESS) {
-			logger.pass("success", MediaEntityBuilder.createScreenCaptureFromPath(Screenshotsonwebpages.getscreenshots(InitialClass.driver)).build());
+			logger.pass("success", MediaEntityBuilder.createScreenCaptureFromPath(Screenshotsonwebpages.getscreenshots()).build());
 			Reporter.log("Attach all test cases screens with pass statements");
 			
 		}
 		else if(result.getStatus()==ITestResult.FAILURE){
-			logger.fail("Failure",MediaEntityBuilder.createScreenCaptureFromPath(Screenshotsonwebpages.getscreenshots(InitialClass.driver)).build());
+			logger.fail("Failure",MediaEntityBuilder.createScreenCaptureFromPath(Screenshotsonwebpages.getscreenshots()).build());
 			logger.log(Status.FAIL, "Failure");
 			Reporter.log("Attaching failure test cases screens to html report");
 		}

@@ -12,13 +12,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
 import com.TestExecution.Baseclass;
+import com.WebCommonMethods.InitialClass;
 
-public class Screenshotsonwebpages extends Baseclass{
-	
-	public static String getscreenshots(WebDriver driver) {
+public class Screenshotsonwebpages extends InitialClass{
+
+	public static String getscreenshots() {
 		TakesScreenshot tc = (TakesScreenshot)driver;
 		File source = tc.getScreenshotAs(OutputType.FILE);
-		String screenshotpath = "C:\\Users\\Pinaj\\Automation\\OpsVeda\\Screenshots\\" +getsystemdatetime()+".png";
+		String screenshotpath = "D:\\Automation\\OpsVeda\\Screenshots\\" +getsystemdatetime()+".png";
 		try {
 			FileHandler.copy(source, new File(screenshotpath));
 		} catch (IOException e) {
